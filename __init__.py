@@ -93,7 +93,7 @@ def get_head_data(name, fac=2, lopc=10, hipc=90):
 
     data = {}
     
-    gdown.download(gids[name])
+    gdown.download(id=gids[name])
     points = np.genfromtxt(heads[head], delimiter=delims[head], skip_header=skips[head])
     xyz = points[::1,:-3]
 
