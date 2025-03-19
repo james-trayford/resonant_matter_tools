@@ -121,7 +121,7 @@ def get_head_data(name, fac=2, lopc=10, hipc=90):
     hterp = np.array(pd.DataFrame(H[0]).interpolate(limit_direction='both'))
     hterp = np.array(pd.DataFrame(hterp.T).interpolate(limit_direction='both')).T
 
-    data = ['reliefmap']
+    data ['reliefmap'] = hterp
     
     img = ndimage.gaussian_filter(hterp, sigma=2, order=0)
     img2 = ndimage.gaussian_filter(hterp, sigma=2.5, order=0)
