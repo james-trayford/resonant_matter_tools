@@ -148,7 +148,7 @@ def get_head_data(name, fac=2, lopc=10, hipc=90):
     
     return data
     
-def sample_points(head_data, npoints=2000)
+def sample_points(head_data, npoints=2000):
     phi = np.linspace(0,np.pi, head_data['edgemap'].shape[0])
     theta = np.linspace(0,2*np.pi, head_data['edgemap'].shape[1])
 
