@@ -172,4 +172,4 @@ def sample_points(head_data, npoints=2000)
         if i==npoints:
           break
       
-    return np.array(points))
+    return np.array(points)
