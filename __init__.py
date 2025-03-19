@@ -32,10 +32,10 @@ skips = dict(zip(statues, [0]+[2]*3))
 delims = dict(zip(statues, [',']+[' ']*3))
 skips = dict(zip(statues, [0]+[2]*3))
 offsets = dict(zip(statues, [dict(zip(statues, [0]+[2]*3))]+[2]*3))
-gids = dict(statues,['1AHCrrHmG9ZCZT9VzWEEnIDMHmbzKlwM5',
-                     '14r6Ym1267Vn_BPeY_Zu1XyeT_0cCkCML',
-                     '1pXyV5LnjIIihF5PpagIIfhscamygDjVl',
-                     '1Xp8WD7RtjEiz4HscUMLVqdSUDy0CDZrE'])
+gids = dict(zip(statues,['1AHCrrHmG9ZCZT9VzWEEnIDMHmbzKlwM5',
+                         '14r6Ym1267Vn_BPeY_Zu1XyeT_0cCkCML',
+                         '1pXyV5LnjIIihF5PpagIIfhscamygDjVl',
+                         '1Xp8WD7RtjEiz4HscUMLVqdSUDy0CDZrE']))
 heads = dict(zip(statues,["/content/Sphynx_Head_Pointcloud_Data.txt",
                           "/content/Sekhmet_Point_Cloud_Data.txt",
                           "/content/Persephone_Point_Cloud_Data.txt",
