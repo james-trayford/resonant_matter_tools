@@ -99,7 +99,6 @@ def get_head_data(name, fac=2, lopc=10, hipc=90):
     
     r0 = xyz - xyz.mean(axis=0)
     zrange = np.diff(np.percentile(r0[:,-1], [0,100]))[0]
-    r0[:,-1] -= -zrange * 0.33
     R = np.sqrt((r0**2).sum(axis=-1))
     polar = np.arccos(r0[:,-1]/R)
     azimuth = (np.sign(r0[:,1]) * np.arccos(r0[:,0] / np.sqrt((r0[:,:-1]**2).sum(axis=-1))))
