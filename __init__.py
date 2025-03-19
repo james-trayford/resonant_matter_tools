@@ -94,7 +94,7 @@ def get_head_data(name, fac=2, lopc=10, hipc=90):
     data = {}
     
     gdown.download(id=gids[name])
-    points = np.genfromtxt(heads[head], delimiter=delims[head], skip_header=skips[head])
+    points = np.genfromtxt(heads[name], delimiter=delims[name], skip_header=skips[name])
     xyz = points[::1,:-3]
 
     data['points'] = xyz
@@ -106,7 +106,7 @@ def get_head_data(name, fac=2, lopc=10, hipc=90):
     polar = np.arccos(r0[:,-1]/R)
     azimuth = (np.sign(r0[:,1]) * np.arccos(r0[:,0] / np.sqrt((r0[:,:-1]**2).sum(axis=-1))))
     bdx = azimuth.argsort()[::1]
-    shift = offsets[head]
+    shift = offsets[name]
     azimuth = (azimuth+np.pi-shift)%(2*np.pi) - np.pi
     polbin = np.linspace(-np.pi, np.pi, 120*fac+1)
     azibin = np.linspace(0, np.pi, 60*fac+1)
