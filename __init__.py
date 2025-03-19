@@ -82,9 +82,7 @@ def bin_ndarray(ndarray, new_shape, operation='sum'):
                                                   ndarray.shape)]
     flattened = [l for p in compression_pairs for l in p]
     ndarray = ndarray.reshape(flattened)
-    print(range(len(new_shape)))
     for i in range(len(new_shape)):
-        print(i)
         op = getattr(ndarray, operation)
         ndarray = op(-1*(i+1))
     return ndarray
