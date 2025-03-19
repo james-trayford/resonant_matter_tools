@@ -23,10 +23,6 @@ from scipy.interpolate import interp1d
 from pathlib import Path
 from scipy.interpolate import RegularGridInterpolator as rgi
 
-pv.set_jupyter_backend('static')
-pv.global_theme.notebook = True
-pv.start_xvfb()
-
 statues = ['sphinx',
            'sekhmet',
            'persephone',
