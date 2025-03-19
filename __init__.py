@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import strauss
 import matplotlib.pyplot as plt
-import pyvista as pv
 import pandas as pd
 from scipy.stats import binned_statistic_2d as bs2d
 from scipy.stats import binned_statistic as bs1d
