@@ -4,6 +4,7 @@ import strauss
 import matplotlib.pyplot as plt
 import gdown
 import pandas as pd
+from IPython.core.display import display
 from scipy.stats import binned_statistic_2d as bs2d
 from scipy.stats import binned_statistic as bs1d
 import scipy.ndimage as ndimage
