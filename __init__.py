@@ -23,6 +23,7 @@ import os
 from scipy.interpolate import interp1d
 from pathlib import Path
 from scipy.interpolate import RegularGridInterpolator as rgi
+from IPython.display import Audio
 
 statues = ['sphinx',
            'sekhmet',
@@ -140,7 +141,20 @@ def get_head_data(name, fac=2, lopc=10, hipc=90):
     bumps3 = bin_ndarray(bumps2, (inquad.shape[0]//15, inquad.shape[-1]), operation='mean')
     
     return data
-    
+
+def simple_mixer(files, vols):
+    data = []
+    length = 0
+    for f in files:
+      data.append(wav.read(f))
+      length = max(data[-1].data.shape[0], length)
+    cont = np.zeros((length,2))
+    for i in range(len(data)):
+      dat = np.array(data[i].data)
+      cont[:dat.shape[0],:] += dat * vols[i]
+    Audio(cont.T, autoplay=True, rate=48000)
+
+
 def sample_points(head_data, npoints=2000):
     phi = np.linspace(0,np.pi, head_data['edgemap'].shape[0])
     theta = np.linspace(0,2*np.pi, head_data['edgemap'].shape[1])
