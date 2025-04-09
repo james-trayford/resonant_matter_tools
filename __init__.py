@@ -153,7 +153,7 @@ def simple_mixer(files, vols):
     for i in range(len(data)):
       dat = np.array(data[i].data)
       cont[:dat.shape[0],:] += dat * vols[i]
-    Audio(cont.T, autoplay=True, rate=48000)
+    display(Audio(cont.T, autoplay=True, rate=48000))
 
 
 def sample_points(head_data, npoints=2000):
