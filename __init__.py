@@ -36,7 +36,7 @@ delims = dict(zip(statues, [',']*2+[' ']*2))
 skips = dict(zip(statues, [0]*2+[2]*2))
 offsets = dict(zip(statues, [-0.48*np.pi]+[0]*3))
 gids = dict(zip(statues,['1AHCrrHmG9ZCZT9VzWEEnIDMHmbzKlwM5',
-                         '1sS0ZCjfTLIvpgOTPwwZBbMvR190eFLPp'
+                         '1T6F3auiqz3xUo6wEMRNwTGfDJVQAioaI'
                          '1pXyV5LnjIIihF5PpagIIfhscamygDjVl',
                          '1Xp8WD7RtjEiz4HscUMLVqdSUDy0CDZrE']))
 heads = dict(zip(statues,["/content/Sphynx_Head_Pointcloud_Data.txt",
