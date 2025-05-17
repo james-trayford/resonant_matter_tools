@@ -28,22 +28,19 @@ from IPython.display import Audio
 
 statues = ['sphinx',
            'muse',
-           'sekhmet',
            'persephone',
            'athena']
 
-skips = dict(zip(statues, [0]*2+[2]*3))
-delims = dict(zip(statues, [',']*2+[' ']*3))
-skips = dict(zip(statues, [0]*2+[2]*3))
-offsets = dict(zip(statues, [-0.48*np.pi]+[0]*4))
+skips = dict(zip(statues, [0]*2+[2]*2))
+delims = dict(zip(statues, [',']*2+[' ']*2))
+skips = dict(zip(statues, [0]*2+[2]*2))
+offsets = dict(zip(statues, [-0.48*np.pi]+[0]*3))
 gids = dict(zip(statues,['1AHCrrHmG9ZCZT9VzWEEnIDMHmbzKlwM5',
                          '1sS0ZCjfTLIvpgOTPwwZBbMvR190eFLPp'
-                         '14r6Ym1267Vn_BPeY_Zu1XyeT_0cCkCML',
                          '1pXyV5LnjIIihF5PpagIIfhscamygDjVl',
                          '1Xp8WD7RtjEiz4HscUMLVqdSUDy0CDZrE']))
 heads = dict(zip(statues,["/content/Sphynx_Head_Pointcloud_Data.txt",
                           "/content/Muse_Point_Cloud_Data.txt"
-                          "/content/Sekhmet_Point_Cloud_Data.txt",
                           "/content/Persephone_Point_Cloud_Data.txt",
                           "/content/Athena_Point_Cloud_Data.txt"]))
 
