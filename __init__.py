@@ -40,7 +40,7 @@ gids = dict(zip(statues,['1AHCrrHmG9ZCZT9VzWEEnIDMHmbzKlwM5',
                          '1pXyV5LnjIIihF5PpagIIfhscamygDjVl',
                          '1Xp8WD7RtjEiz4HscUMLVqdSUDy0CDZrE']))
 heads = dict(zip(statues,["/content/Sphynx_Head_Pointcloud_Data.txt",
-                          "/content/Muse_Point_Cloud_Data.txt"
+                          "/content/Muse_Point_Cloud_Data.txt",
                           "/content/Persephone_Point_Cloud_Data.txt",
                           "/content/Athena_Point_Cloud_Data.txt"]))
 
